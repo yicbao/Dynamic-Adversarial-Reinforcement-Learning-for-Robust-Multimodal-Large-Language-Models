@@ -1,0 +1,8 @@
+[prompts]
+# Prompt template for Yes/No (binary) questions.
+# Use {question} as the placeholder for the question text.
+yorn = "Please answer the following question with only 'Yes' or 'No'.\n\n{question}\n\nAnswer with \\boxed{{Yes}} or \\boxed{{No}}."
+
+# Prompt template for multiple-choice questions (MCQ).
+# Use {question} as the placeholder for the full question + options block.
+mcq = "Please answer the following multiple-choice question. Choose the best answer from the options provided.\n\n{question}\n\nProvide your final answer in the format \\boxed{{X}}, where X is the letter of your choice."

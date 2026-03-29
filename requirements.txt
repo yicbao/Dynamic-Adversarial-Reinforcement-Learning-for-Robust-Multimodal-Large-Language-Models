@@ -1,0 +1,27 @@
+# Core training dependencies
+torch>=2.4.0
+torchvision
+transformers>=4.45.0
+accelerate>=0.34.0
+peft>=0.13.0
+
+# RL training framework (EasyR1/verl)
+# Install from the included verl/ directory:
+# pip install -e verl/
+
+# Inference
+vllm>=0.6.0
+
+# Data
+datasets>=2.20.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Experiment tracking
+wandb
+
+# Evaluation utilities
+requests
+toml
+Pillow>=10.0.0
+tqdm
