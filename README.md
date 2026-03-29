@@ -1,6 +1,6 @@
-<p align="center" style="font-size: 18px; margin-top: 0;">
+<h2 align="center">
   Dynamic Adversarial Reinforcement Learning for Robust Multimodal Large Language Models
-</p>
+</h2>
 
 <p align="center">
   <a href="[https://huggingface.co/chisato111/AOT-Qwen2.5-VL-7B-Instruct]"><img src="https://img.shields.io/badge/🌐_huggingface-AOT-yellow" alt="Page"></a>
@@ -11,7 +11,7 @@
 # 🤗 Overview
 
 <p align="center">
-  <img src="./assets/intro.pdf" alt="AOT Concept" width="800">
+  <img src="./assets/intro.png" alt="AOT Concept" width="800">
 </p>
 
 **✨ Key Contributions:**
@@ -21,14 +21,17 @@
 * **Strong Empirical Results:** Significantly enhances perceptual robustness (e.g., +9.24 points on VStar, +8.26 points on HRBench-4K), reduces model hallucinations, and preserves general multimodal capabilities without catastrophic forgetting.
 
 🧠 **Co-evolving Attacker & Defender:** Direct manipulation of visual semantics (images) to probe fine-grained spatial perception.
+
 🎯 **Dynamic Curriculum:** The Attacker autonomously discovers diverse attack strategies (object addition, removal, replacement, and hybrid edits).
+
 🔄 **Dual Policy Optimization:** Flow-GRPO for the diffusion-based Attacker and DAPO for the MLLM Defender.
+
 🧪 **Semantic Integrity Assurance:** Localized SSIM checks guarantee that generated visual attacks are valid and do not corrupt the core objects relevant to the reasoning task.
 
 # 📒 Method
 
 <p align="center">
-  <img src="./assets/evolution.pdf" alt="AOT Framework" width="800">
+  <img src="./assets/evolution.png" alt="AOT Framework" width="800">
 </p>
 
 AOT operates through an initial bootstrapping phase followed by a continuous, iterative co-evolution loop:
